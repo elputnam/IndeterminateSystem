@@ -30,7 +30,7 @@ function draw() {
   image(photos[num], 0, 0, width, height);
   
   capturer.capture(document.getElementById('defaultCanvas0'));  
-  if (frameCount==360){
+  if (frameCount==150){
     save_record();
   }
   print(frameCount);
