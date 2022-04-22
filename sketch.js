@@ -19,3 +19,7 @@ function draw() {
   tint(random(165, 190), 100, 100, random(100));
   image(photos[num], 0, 0, width, height);
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
