@@ -30,7 +30,11 @@ function draw() {
   image(photos[num], 0, 0, width, height);
   
   capturer.capture(document.getElementById('defaultCanvas0'));  
+<<<<<<< HEAD
   if (frameCount==180){
+=======
+  if (frameCount==150){
+>>>>>>> 508a7bf8596689c92e2c73b75da24c6800048fe7
     save_record();
   }
   print(frameCount);
