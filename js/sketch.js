@@ -5,7 +5,7 @@ var img;
 var capturer = new CCapture({
   format:'gif', 
   workersPath: 'js/',
-  framerate: 20
+  framerate: 15
 });
 
 function preload(){
@@ -17,7 +17,7 @@ function preload(){
 
 
 function setup() {
-  createCanvas(960, 540);
+  createCanvas(480, 270);
   frameRate(20);
   colorMode(HSB, 360, 100, 100, 100);
 }
@@ -30,7 +30,7 @@ function draw() {
   image(photos[num], 0, 0, width, height);
   
   capturer.capture(document.getElementById('defaultCanvas0'));  
-  if (frameCount==360){
+  if (frameCount==180){
     save_record();
   }
   print(frameCount);
